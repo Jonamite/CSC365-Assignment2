@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <children>
+      <Button onAction="#SearchButton" layoutX="301.0" layoutY="147.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="152.0" text="LOAD WEBSITES" />
+      <Text layoutX="176.0" layoutY="37.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Cluster Buster" wrappingWidth="440.857421875">
+         <font>
+            <Font name="Franklin Gothic Demi" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="LoadingText" fill="#ff0f0f" layoutX="150.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOADING">
+         <font>
+            <Font name="Franklin Gothic Book" size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="UserWebsite" layoutX="303.0" layoutY="242.0" text="Your Website Here" />
+      <Text fill="#079055" layoutX="148.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter URL:" wrappingWidth="105.72119140625">
+         <font>
+            <Font name="Gill Sans MT" size="23.0" />
+         </font>
+      </Text>
+      
+      
+       <Button onAction="#FindMatchingURL" fx:id="SearchButton" layoutX="301.0" layoutY="320.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="152.0" text="Search Website" />
+     
+       <Text fx:id="SimilarText" fill="#ffa500" layoutX="135.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+   			 <font>
+            <Font name="Franklin Gothic Book" size="22.0" />
+        	 </font>
+        </Text>
+        
+             <Text fx:id="SimilarLink1" fill="#50C878" layoutX="135.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+   			 <font>
+            <Font name="Franklin Gothic Book" size="22.0" />
+        	 </font>
+        </Text>
+   </children>
+</AnchorPane>
